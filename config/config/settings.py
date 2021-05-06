@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     'about',
     'register',
     'register2',
-    'django.contrib.auth',
+    #'django.contrib.auth',
 ]
 
-EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

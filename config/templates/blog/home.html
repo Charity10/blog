@@ -1,13 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  {% for post in object_list %}
+  <h1>Home blog</h1> 
+  <p>welcome to my django blog</p>
+  <a href="{% url 'register:signup' %}">SignUp Page</a>
+  <a href="{% url 'register2:signin' %}">SignIn Page</a>
+  <!-- {% for post in object_list %}
+
    <div class="post-entry">
-       <h2><a href = ""> {{ post.title }}</h2>
-    </div>-->
-   {% endfor %}
-   <!-- <h1>Home blog</h1> -->
-  <!--  <p>welcome to my django blog</p> -->
+
+      <h2><a href= "{% url 'post_detail' post.pk %}"> {{ post.title }}</h2>
+
+      <p>{{post.body}}</p>
+
+      </div>
+
+      {% endfor %} -->
+  
 {% endblock %}
 
 
